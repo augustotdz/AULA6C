@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  input, select, button {
+    padding: 8px;
+    margin: 10px 0;
+    width: 300px;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilo para a caixa de seleção "Possui convênio?" */
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+  }
+
+  
+  /* Organiza o alinhamento das opções de "Sim" e "Não" em linha */
+  input[type="radio"] {
+    margin-block-end: 20px;
+  }
+  
+  /* Caixa de seleção do convênio */
+  #boxConvenio {
+    margin-top: 10px;
+    margin-left: 10px; /* Ajusta a distância */
+    display: inline-block;
+  }
+  
+  /* Alinha o botão mais próximo do formulário */
+  button {
+    margin-top: 20px;
+  }
+  

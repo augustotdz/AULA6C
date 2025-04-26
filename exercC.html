@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desconto em Vacina - Veterinária</title>
+  <link rel="stylesheet" href="exercC.css">
+</head>
+<body>
+
+    <div class="imagem-lado">
+        <img src="imagens/veter.jpg" width="300">
+      </div>
+
+  <h2>Desconto de Vacina</h2>
+
+  <label for="preco">Preço da vacina (R$):</label><br>
+  <input type="number" id="preco" placeholder="Digite o valor"><br>
+
+  <label for="possuiConvenio">Possui convênio?</label><br>
+  <input type="radio" id="sim" name="convenio" value="sim" onchange="mostrarConvenios()"> Sim
+  <input type="radio" id="nao" name="convenio" value="nao" checked onchange="mostrarConvenios()"> Não
+  <br><br>
+
+  <div id="boxConvenio" style="display: none;">
+    <label for="convenio">Selecione o convênio:</label><br>
+    <select id="convenio">
+      <option value="amigo">Amigo dos Animais</option>
+      <option value="saude">Saúde Animal</option>
+    </select><br>
+  </div>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <div id="resultado"></div>
+
+  <script src="exercC.js"></script>
+</body>
+</html>
